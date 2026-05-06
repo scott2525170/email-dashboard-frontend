@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Email Dashboard</h1>
+
+<form id="form">
+  <input id="emails" placeholder="Emails (comma separated)" />
+  <input id="subject" placeholder="Subject" />
+  <textarea id="message" placeholder="Message"></textarea>
+  <input type="file" id="image" />
+  <button type="submit">Send Emails</button>
+</form>
+
+<h2>Results</h2>
+<table id="resultsTable">
+  <tr>
+    <th>Email</th>
+    <th>Status</th>
+    <th>Error</th>
+  </tr>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
