@@ -9,7 +9,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     const file = document.getElementById("image").files[0];
     if (file) formData.append("image", file);
   
-    const API_URL = "https://repaying-mangle-childless.ngrok-free.dev";
+    const API_URL = " https://repaying-mangle-childless.ngrok-free.dev ";
   
     const res = await fetch(`${API_URL}/api`, {
       method: "POST",
