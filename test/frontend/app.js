@@ -11,7 +11,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
   
     const API_URL = "https://repaying-mangle-childless.ngrok-free.dev";
 
-    const res = await fetch(`${API_URL}/send`, {
+    fetch(`${API_URL}/send`, {
       method: "POST",
       body: formData
     });
