@@ -9,7 +9,9 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     const file = document.getElementById("image").files[0];
     if (file) formData.append("image", file);
   
-    const res = await fetch("http://localhost:3000/send-bulk", {
+ const API_URL = "https://repaying-mangle-childless.ngrok-free.dev";
+  
+    const res = await fetch(`${API_URL}/api`, {
       method: "POST",
       body: formData
     });
