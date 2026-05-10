@@ -9,12 +9,12 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     const file = document.getElementById("image").files[0];
     if (file) formData.append("image", file);
   
-    const API_URL = "https://your-new-ngrok-url.ngrok-free.dev";
+    const API_URL = "https://repaying-mangle-childless.ngrok-free.dev";
 
-    fetch(`${API_URL}/send`, {
-  method: "POST",
-  body: formData
-});
+    const res = await fetch(`${API_URL}/send`, {
+      method: "POST",
+      body: formData
+    });
   
     const data = await res.json();
     console.log(data);
