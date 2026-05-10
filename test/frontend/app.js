@@ -11,7 +11,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
   
     const API_URL = "https://your-new-ngrok-url.ngrok-free.dev";
 
-const res = await fetch(`${API_URL}/api`, {
+    fetch(`${API_URL}/send`, {
   method: "POST",
   body: formData
 });
